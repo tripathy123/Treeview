@@ -1,0 +1,324 @@
+/* CSS Document Developed by Z. N. from NesWebDesign © All rights Reserved. */
+/* Global Style*/
+@font-face {
+	font-family: 'CalibriBoldItalic';
+	src: url('../fonts/calibriz.eot');
+	src: url('../fonts/calibriz.eot') format('embedded-opentype'), url('../fonts/calibriz.woff') format('woff'), url('../fonts/calibriz.ttf') format('truetype'), url('../fonts/calibriz.svg#CalibriBoldItalic') format('svg');
+}
+@font-face {
+	font-family: 'CalibriRegular';
+	src: url('../fonts/calibri.eot');
+	src: url('../fonts/calibri.eot') format('embedded-opentype'), url('../fonts/calibri.woff') format('woff'), url('../fonts/calibri.ttf') format('truetype'), url('../fonts/calibri.svg#CalibriRegular') format('svg');
+}
+body {
+	min-height: 100%;
+	margin: 0;
+	font-family:'CalibriRegular';
+	color: #333333;
+	background-color: #ffffff;
+	background: /*url("../images/body.jpg") left top repeat*/;
+	font-size:14px;
+}
+.wrapper {
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.red {
+	color: #FF0000;
+}
+/* Design Structure */
+#main {
+}
+#header { background:url(../images/main-bg.jpg) repeat-x top left; width:100%; float:left; padding:0; margin:0;}
+
+.logo{ float:left; padding:5px;}
+
+.admin {
+    display: none;
+    float: right;
+    padding: 5px;
+    position: relative;
+    width: 272px;
+}
+
+.admin ul.control, .headInfo ul.control {
+    display: block;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    width: 190px;
+}
+li {
+    line-height: 20px;
+}
+
+.admin .image {
+    float: left;
+    margin-right: 5px;
+    width: 72px;
+}
+
+.admin .info {
+    color: #666666;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px;
+}
+.img-polaroid {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+}
+.connect-us {
+    float: right;
+    margin: 8px 0 0;
+}
+.foricon{float:right; display:inline-block;}
+.connect-us .heading {
+    color: #4D7096;
+    float: right;
+    font: 20px/32px CalibriBoldItalic;
+    margin-right: 11px;
+}
+/*Menu*/
+#nav {
+	background: url("../images/header.jpg") repeat-x scroll left top transparent;
+	float:left;
+	width: 100%;
+}
+#nav ul {
+	width:100%;
+	padding:0;
+	margin:0;
+}
+#nav ul li {
+    border-right: 1px solid #315680;
+    float: left;
+    list-style: none outside none;
+    padding: 0 10px 0 0;
+    width: auto;
+	position:relative;
+}
+#nav ul li:hover {
+	background:none;
+}
+#nav ul li.parent a {
+	background: url("../images/menu_arrow_down.png") no-repeat scroll 100% center transparent;
+}
+#nav ul li a {
+    color: #FFFFFF;
+    float: left;
+    font: 14px 'CalibriRegular';
+    padding: 10px 50px 10px 15px;
+    text-decoration: none;
+}
+#nav ul li a:hover {
+	font:14px 'CalibriRegular';
+	color:#fff;
+	text-decoration:none;
+}
+/*2nd lable*/
+#nav ul li ul {
+	display: none;
+	z-index:99999;
+
+}
+#nav ul li:hover ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 35px;
+	*top: 35px;
+	top: 35px \0/;
+	width: 198px;
+	left:-1px;
+}
+#nav ul li ul li:first-child{
+	border-top: 1px solid #315680;
+}
+#nav ul li ul li {
+    background:#507298 /*url("../images/header.jpg") repeat-x scroll left top transparent*/;
+    border-right: 1px solid #315680;
+    border-bottom: 1px solid #315680;
+	border-left: 1px solid #315680;
+    display: block;
+    float: left;
+    position: relative;
+    width: 198px;
+}
+#nav ul li ul li a {
+	color: #fff;
+	font-size: 14px;
+	background:none;
+}
+#nav ul li ul li a:hover {
+	color:#fff;
+	text-shadow: 0 0px 0 #000;
+}
+#nav ul li ul li:hover, #nav ul li ul li.active {
+	background:#0593da/*url("../images/menu-hover.png") repeat-x scroll left -1px transparent*/;
+
+}
+
+#nav ul li.parent ul li a {
+	background:none;
+}
+#nav ul li ul li.parent a {
+    background: url("../images/menu_arrow_left.png") no-repeat scroll right center transparent !important;
+    padding: 10px;
+    width: 90%;
+}
+
+
+#nav ul li.parent ul li a {
+    background: none repeat scroll 0 0 transparent;
+    padding: 5px;
+}
+/*3rd lable*/
+
+#nav ul li ul li ul {
+	display: none !important;
+	
+
+}
+#nav ul li ul li:hover ul {
+	display: block !important;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -1px;
+	width: 219px;
+	left:208px;
+}
+#nav ul li ul li ul li {
+    background: none repeat scroll 0 0 #507298/*url("../images/header.jpg") repeat-x scroll 0 0 transparent*/;
+    border-right: 1px solid #315680;
+    border-bottom: 1px solid #315680 !important;
+	border-left: 1px solid #315680;
+    display: block;
+    float: left;
+    position: relative;
+    width: 198px;
+}
+#nav ul li ul li ul li:first-child{
+	border-top: 1px solid #315680;
+}
+#nav ul li ul li ul li a {
+	color: #fff;
+	font-size: 14px;
+	background:none;
+}
+#nav ul li ul li ul li:hover {
+	color:#0590d6;
+	text-shadow: 0 0px 0 #000;
+}
+#nav ul li.parent ul li a {
+	background:none;
+}
+#nav ul li ul li.parent ul li a{
+	background:none !important;
+	color:#fff;
+}
+/*Menu*/
+#leftNav {
+}
+#rightNav {
+}
+#contentArea {
+}
+#footer {
+}
+img {
+	border: medium none;
+}
+/* Font Style and other */
+
+
+.for-btn-box {
+    padding-top: 5px;
+}
+.workplace .head {
+    background: url("../images/menu-item.jpg") repeat-x scroll left top padding-box transparent;
+    border: 1px solid #5F7687;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+            .block,.block-fluid{border: 1px solid #ccc; border-top: 0px; background-color: #F9F9F9; margin-bottom: 20px;
+                    -moz-border-bottom-left-radius: 3px; -moz-border-bottom-right-radius: 3px;
+                    -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px;
+                    -o-border-bottom-left-radius: 3px; -o-border-bottom-right-radius: 3px;
+                    -ms-border-bottom-left-radius: 3px; -ms-border-bottom-right-radius: 3px;
+                    border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
+				
+.workplace {
+    clear: both;
+    padding: 10px;
+}
+
+.workplace .head h1, .content .workplace .head h2, .content .workplace .head h3, .content .workplace .head h4, .content .workplace .head h5, .content .workplace .head h6 {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0 0 0 10px;
+    padding: 4px 0;
+    text-shadow: 0 1px 0 #333333;
+}
+[class*="block"] .table tr th, [class*="block"] .table tr td {
+    border-right: 1px solid #DDDDDD;
+}
+[class*="block"] .table tr th {
+    background-color: #F1F1F1;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px;
+}
+hr {
+    border: 0 none;
+    display: block;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+hr {
+    background: url("../images/line.png") repeat-x scroll 0 0 transparent;
+    border: medium none;
+    height: 3px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.table input[type="text"] {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.tab-mainbox{
+    border-top: 1px solid #FFFFFF;
+    line-height: 18px;
+    margin: 0 auto;
+}

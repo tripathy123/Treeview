@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Document</title>
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script>
+
+  $(document).ready(function(){
+        var xmlDoc1 = "<MenuRoot1> <Menu id=\"home\" text=\"Home from text\" url=\"home.aspx\"></Menu><Menu id=\"projects\" text=\"Projects\" url=\"projects.aspx\"><SubMenu id=\"sub1\" text=\"Sub One\" url=\"subone.aspx\"></SubMenu><SubMenu id=\"sub2\" text=\"Sub Two\" url=\"subtwo.aspx\"></SubMenu><SubMenu id=\"sub3\" text=\"Sub Two\" url=\"subthree.aspx\"></SubMenu></Menu><Menu id=\"microsoft\" text=\"MSN\" url=\"http://msn.com\"></Menu></MenuRoot1>";
+        
+        var xmlDoc1 = "<MenuRoot1> <Menu id=\"home\" text=\"Home from text\" url=\"home.aspx\"></Menu><Menu id=\"projects\" text=\"Projects\" url=\"projects.aspx\"><SubMenu id=\"sub1\" text=\"Sub One\" url=\"subone.aspx\"></SubMenu><SubMenu id=\"sub2\" text=\"Sub Two\" url=\"subtwo.aspx\"></SubMenu><SubMenu id=\"sub3\" text=\"Sub Two\" url=\"subthree.aspx\"></SubMenu></Menu><Menu id=\"microsoft\" text=\"MSN\" url=\"http://msn.com\"></Menu></MenuRoot1>";
+		var xmlDocArray=new Array();
+		xmlDocArray[0]=xmlDoc1;
+		
+		
+		var jxml = $.parseXML(xmlDoc1);
+        $bxml = $(jxml);
+        //method call to populate 
+        paintMenu2($bxml);
+
+    function paintMenu2(data){
+      //put your stylin here while painting UL so that it becomes nice Menu
+      var ul_main=$("<ul />");
+            $(data).find("Menu").each(function(){
+                if($(this).children().length)
+                {
+                  var ulSub=$("<ul />");
+                    $(this).children().each(function(){
+                        ulSub.append("<li id="+$(this).attr("id")+"><a href="+$(this).attr("url")+">"+$(this).attr("text")+"</a></li>");
+                    });
+                    var li=$("<li id="+$(this).attr("id")+"><a href="+$(this).attr("url")+">"+$(this).attr("text")+"</a></li>");
+                    ul_main.append(li.append(ulSub))
+                }
+                else ul_main.append("<li id="+$(this).attr("id")+"><a href="+$(this).attr("url")+">"+$(this).attr("text")+"</a></li>");
+            });
+      $("#second_menu").append(ul_main);
+    }
+});
+  </script>
+</head>
+
+<body>
+<div id ="second_menu"> </div>
+</body>
+</html>

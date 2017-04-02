@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../css/icons.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+	
+    <div id="header">
+    	<div class="logo">
+        	<img src="../images/logo-sigma.png" width="324" height="78">
+        </div>
+        
+        <div class="admin" style="display: block;">
+        <div class="image">
+            <img class="../img-polaroid" src="../images/no-images.png">                
+        </div>
+        <ul class="control"> 
+        <li><div class="info">
+            <span>Welcom back! Your last visit: 24.10.2012 in 19:55</span>
+        </div></li>
+            <li><span class="icon-share-alt"></span> <a href="http://aqvatarius.com/themes/aquarius_v14/login.html">Logout</a></li>
+        </ul>
+        
+    </div>
+        
+    </div>
+
+	<div id="nav">
+    	<ul>
+        	<li class="parent"><a href="#">Order Management</a>
+            
+                <ul>
+                	<li><a href="#">Create PO</a></li>
+                    <li><a href="#">Create DO</a></li>
+                    <li><a href="#">Create Work Order</a></li>
+                    <li><a href="#">Maintain Order</a></li>
+                    <li><a href="#">Process Order</a></li>
+				</ul>
+                
+			</li>
+			<li class="parent"><a href="#">Job</a>
+            
+            	<ul>
+                	<li class="parent"><a href="#">Job Processing</a>
+                        <ul>
+                            <li><a href="job_view.html">View</a></li>
+                            <li><a href="job_Update.html">Update</a></li>
+                            <li><a href="#">Create Plan</a></li>
+                            <li><a href="#">Maintain Plan</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent"><a href="#">Ops Control</a>
+                    	<ul>
+                            <li><a href="#">Create Exception Records</a></li>
+                            <li><a href="#">Maintain Exception Records</a></li>
+                            <li><a href="#">Complete Harvesting</a></li>
+                        </ul>
+                    </li>
+				</ul>
+            
+            </li>
+            
+            <li class="parent"><a href="#">Inventory Management</a>
+            	
+                <ul>
+                	<li class="parent"><a href="#">Transaction</a>
+                    	<ul>
+                            <li><a href="#">Transaction Create</a></li>
+                            <li><a href="#">Transaction View</a></li>
+                            <li><a href="#">Transaction Update</a></li>
+                            <li><a href="#">Transaction Delete</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            
+            </li>
+            
+      <li class="parent"><a href="#">Report</a>
+            
+           	<ul>
+                	<li><a href="#">Freight Summary Report</a></li>
+                    <li><a href="#">Statement of Account:Invoice Detail Report</a></li>
+                    <li><a href="#">Profit and Loss of the Job Report</a></li>
+                    <li><a href="#">Customer Revenue Allocation Report:By Month</a></li>
+                    <li><a href="#">Vendor Cost Allocation Report: By Month</a></li>
+                    <li class="parent"><a href="#">Inventory Report</a>
+                    
+                    	<ul>
+                            <li><a href="#">Inbound Receipt Confirmation</a></li>
+                            <li><a href="#">Storing List</a></li>
+                            <li><a href="#">Inventory Report</a></li>
+                            <li><a href="#">Delivery Order Report</a></li>
+                            <li><a href="#">Replenishment Report</a></li>
+                        </ul>
+                    
+                    </li>
+                </ul>
+            </li>
+   
+            <li class="parent"><a href="#">Audit</a>
+            
+            	<ul>
+                	<li><a href="#">View Planting Cycle History</a></li>
+                </ul>
+                
+            </li>
+            <li class="parent"><a href="#">Master</a>
+            
+            	<ul>
+                	<li><a href="#">Activity Master</a></li>
+                    <li><a href="#">Tower Master</a></li>
+                </ul>
+            
+            </li>
+		</ul>                  
+    </div>
+    
+    <div class="workplace">
+    <div class="for-btn-box">
+	 <a href="../index.html"><input type="submit" name="Submit3" value="Home" class="btn"></a>
+	<a href="job_view2.html"><input type="submit" name="Submit2" onClick="window.location.href='job_view2.html'" value="Search" class="btn btn-warning"></a></div>
+    <hr />
+    <div class="row-fluid">
+
+            <div class="span12">                    
+                <div class="head clearfix">
+                    <div class="isw-grid"></div>
+                    <h1>Job - View</h1>                            
+                </div>
+                
+                <div class="block-fluid">
+                    <table width="100%" cellspacing="0" cellpadding="0" class="table">
+                        <tbody>
+                            <tr>                                        
+                                <td>Organization</td>
+                                <td><input name="textfield422" type="text" value="WO-1234" size="20" /><span class="icon-arrow-up"></span></td>
+                                <td>Customer</td>                      
+                                <td><input name="textfield4222" type="text" value="KC-1" size="20" /><span class="icon-arrow-up"></span></td>
+                            </tr>
+                            <tr>                                        
+                                <td>Tx Type</td>
+                                <td><input type="text" size="20" name="textfield42324"><span class="icon-arrow-up"></span></td>
+                                <td>Status</td>                      
+                                <td><input type="text" size="20" name="textfield423232"><span class="icon-arrow-up"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Job Number </td>
+                                <td><input type="text" size="20" name="textfield42324"><span class="icon-arrow-up"></span></td>
+                                <td>Order Number</td>                      
+                                <td><input type="text" size="20" name="textfield42323"><span class="icon-arrow-up"></span></td>
+                            </tr>                            
+                        </tbody>
+                        <tfoot>
+                        	<tr>
+                            	<th>Created Date From</th>
+                                <th><input type="text" size="20" name="textfield4232"><span class="icon-calendar"></span></th>
+                                <th>To       </th>
+                                <th><input type="text" size="20" name="textfield42322"><span class="icon-calendar"></span></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+                
+                
+            </div>                                
+
+        </div>
+        
+    <hr />
+    </div>
+</div>
+</body>
+</html>
