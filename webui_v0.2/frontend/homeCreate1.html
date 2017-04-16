@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>thenewboston</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/aa.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	<style>
+#dImage {
+	background-color:green;
+    overflow: hidden;
+    align:left;
+	height:25px; 
+	width:25px;
+}
+
+#arrow {
+  transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+}
+
+
+#arrow.rotateDown {
+  transform: rotate(180deg) translate(-100%, -100%);
+  -webkit-transform: rotate(180deg) translate(-100%, -100%);
+  -ms-transform: rotate(180deg) translateX(-100%, -100%);
+}
+</style>
+</head>
+<body>
+	<div class="logo" id="header">
+         <img src="images/logo-sigma.png" width="350" height="86">	
+	<br/><br/>		   
+	</div>
+    <table Width="100%" cellspacing="0">
+    <tr bgcolor="#000066">
+		<td  height="25" >&nbsp;<img src="images/header_menu_list.png"/></td>
+		<td ><img id="arrow" src="images/transparent yellow up key.png" align="right" height="25" width="25"  onClick="toggle()"/>			   </td>
+	</tr>
+</table>
+</body>
+</html>
+
+<script>
+var i='up'
+function toggle() {
+
+img = document.getElementById('arrow');
+if (i=='up'){
+	i='down';
+	document.getElementById("header").style.display = "none"
+	return 	img.className = "rotateDown";
+}
+if (i=='down'){
+	i='up'
+	document.getElementById("header").style.display = ""
+	return 	img.className = "";
+}
+}
+
+</script>

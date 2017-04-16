@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>thenewboston</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"  />
+	<link rel="stylesheet" type="text/css" href="../css/home.css"  />
+    
+	<script type="text/javascript" src="../js/aa.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+
+<style>
+body{
+margin-left:1px;
+}
+#header{ 
+ padding-left:4px;
+ height:83px;
+ position:static;
+ }
+
+#navTable {
+background: url(../images/header.jpg) repeat-x scroll left top transparent;
+float: left;
+}
+
+#dImage {
+	background-color:green;
+    overflow: hidden;
+    align:left;
+	height:25px; 
+	width:25px;
+}
+
+#arrow {
+  transform-origin: top left;
+  /* IE 10+, Firefox, etc. */
+  -webkit-transform-origin: top left;
+  /* Chrome */
+  -ms-transform-origin: top left;
+  /* IE 9 */
+}
+
+
+#arrow.rotateDown {
+  transform: rotate(180deg) translate(-100%, -100%);
+  -webkit-transform: rotate(180deg) translate(-100%, -100%);
+  -ms-transform: rotate(180deg) translateX(-100%, -100%);
+}
+</style>
+</head>
+<body >
+	<div class="logo" id="header">
+         <img src="../images/logo-sigma.png">	
+	</div>
+  <table id="navTable" Width="100%" cellspacing="0">
+    <tr >
+		<td  height="25" >&nbsp;<img src="../images/header_menu_list.png"/></td>
+		<td ><img id="arrow" src="../images/transparent yellow up key.png" align="right" height="25" width="25"  onClick="toggle()"/>			   </td>
+	</tr>
+</table>
+<br/>
+        <div class="container">
+		  <div class="row">
+		     <div class="well">
+			  <a href="" class="btn">Button</a>
+			  <a href="" class="btn btn-primary">Button</a>
+			  <a href="" class="btn btn-success">Button</a>
+			  <a href="" class="btn btn-info">Button</a>
+			  <a href="" class="btn btn-warning">Button</a>
+			  <a href="" class="btn btn-danger">Button</a>
+			  </div>
+			 </div>
+		</div>	  
+</body>
+</html>
+
+<script>
+var i='up'
+function toggle() {
+
+img = document.getElementById('arrow');
+if (i=='up'){
+	i='down';
+	document.getElementById("header").style.display = "none"
+	return 	img.className = "rotateDown";
+}
+if (i=='down'){
+	i='up'
+	document.getElementById("header").style.display = ""
+	return 	img.className = "";
+}
+}
+
+</script>
